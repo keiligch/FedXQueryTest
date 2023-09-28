@@ -93,7 +93,8 @@ public class Main {
                             "?variable  fmi:isVariableOf <" + component + ">." +
                             "?conn ssp:connectsFrom | ssp:connectsTo ?variable." +
                             "}");
-            //Hier die Stelle mit der Timeoutexception
+
+            //The next line is the one which hangs up, Timeout
             List<BindingSet> variableList = ((FedXTupleQuery)queryConnVariables).evaluate().stream().collect(Collectors.toList());
             assert variableList.size() == 0;
 
