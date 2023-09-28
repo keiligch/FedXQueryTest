@@ -1,0 +1,720 @@
+@prefix fmi: <http://iwu.fraunhofer.de/h2link/fmi/> .
+@prefix ssp: <http://iwu.fraunhofer.de/h2link/ssp/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix port: <http://iwu.fraunhofer.de/h2link/port/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix h2link: <http://iwu.fraunhofer.de/h2link/db/> .
+
+<http://iwu.fraunhofer.de/h2link/fmi/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://iwu.fraunhofer.de/h2link/fmi/causality
+fmi:causality rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty <http://iwu.fraunhofer.de/h2link/ssp/connectorType> ;
+              rdf:type owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Connector> ;
+              rdfs:range fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/dataType
+fmi:dataType rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain fmi:ScalarVariable ,
+                         <http://iwu.fraunhofer.de/h2link/ssp/Connector> ;
+             rdfs:range fmi:DataType .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/hasModelDescr
+fmi:hasModelDescr rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                  owl:inverseOf fmi:isModelDescrOf ;
+                  rdf:type owl:InverseFunctionalProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain fmi:FmuModel ;
+                  rdfs:range fmi:FmiModelDescriptionElement .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/hasParameter
+fmi:hasParameter rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                 owl:inverseOf fmi:isParameterOf ;
+                 rdf:type owl:InverseFunctionalProperty ,
+                          owl:AsymmetricProperty ;
+                 rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Component> ;
+                 rdfs:range fmi:Parameter .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/hasVariable
+fmi:hasVariable rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                owl:inverseOf fmi:isVariableOf ;
+                rdf:type owl:InverseFunctionalProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain fmi:FmuModel ,
+                            port:Port ;
+                rdfs:range fmi:ScalarVariable .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/initial
+fmi:initial rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain fmi:ScalarVariable ;
+            rdfs:range fmi:InitialValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf
+fmi:isModelDescrOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                   rdf:type owl:FunctionalProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain fmi:FmiModelDescriptionElement ;
+                   rdfs:range fmi:FmuModel .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/isParameterOf
+fmi:isParameterOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                  rdf:type owl:FunctionalProperty ,
+                           owl:AsymmetricProperty ;
+                  rdfs:domain fmi:Parameter ;
+                  rdfs:range <http://iwu.fraunhofer.de/h2link/ssp/Component> .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/isVariableOf
+fmi:isVariableOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                 rdf:type owl:FunctionalProperty ,
+                          owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain fmi:ScalarVariable ;
+                 rdfs:range fmi:FmuModel ,
+                            port:Port .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/variability
+fmi:variability rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain fmi:ScalarVariable ;
+                rdfs:range fmi:VariabilityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/bondGraphRole
+port:bondGraphRole rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain port:VariableRole ;
+                   rdfs:range port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/hasPort
+port:hasPort rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+             owl:inverseOf port:isPortOf ;
+             rdf:type owl:InverseFunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain fmi:FmuModel ;
+             rdfs:range port:Port .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/isPortOf
+port:isPortOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+              rdf:type owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain port:Port ;
+              rdfs:range fmi:FmuModel .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/portType
+port:portType rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain port:Port ;
+              rdfs:range port:PortType .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/requires
+port:requires rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain port:PortType ;
+              rdfs:range port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/variableRole
+port:variableRole rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain fmi:ScalarVariable ;
+                  rdfs:range port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/connectorType
+<http://iwu.fraunhofer.de/h2link/ssp/connectorType> rdf:type owl:ObjectProperty ,
+                                                             owl:FunctionalProperty ,
+                                                             owl:AsymmetricProperty ,
+                                                             owl:IrreflexiveProperty ;
+                                                    rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Connector> ;
+                                                    rdfs:range fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/connectsFrom
+<http://iwu.fraunhofer.de/h2link/ssp/connectsFrom> rdf:type owl:ObjectProperty ,
+                                                            owl:FunctionalProperty ,
+                                                            owl:InverseFunctionalProperty ,
+                                                            owl:AsymmetricProperty ;
+                                                   rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Connection> ;
+                                                   rdfs:range <http://iwu.fraunhofer.de/h2link/ssp/Connector> .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/connectsTo
+<http://iwu.fraunhofer.de/h2link/ssp/connectsTo> rdf:type owl:ObjectProperty ,
+                                                          owl:FunctionalProperty ,
+                                                          owl:InverseFunctionalProperty ,
+                                                          owl:AsymmetricProperty ;
+                                                 rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Connection> ;
+                                                 rdfs:range <http://iwu.fraunhofer.de/h2link/ssp/Connector> .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/hasChild
+<http://iwu.fraunhofer.de/h2link/ssp/hasChild> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                                               rdf:type owl:AsymmetricProperty .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/hasConnector
+<http://iwu.fraunhofer.de/h2link/ssp/hasConnector> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                                                   owl:inverseOf <http://iwu.fraunhofer.de/h2link/ssp/isConnectorOf> ;
+                                                   rdf:type owl:InverseFunctionalProperty ;
+                                                   rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Component> ;
+                                                   rdfs:range <http://iwu.fraunhofer.de/h2link/ssp/Connector> .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/hasParent
+<http://iwu.fraunhofer.de/h2link/ssp/hasParent> rdf:type owl:ObjectProperty .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/isConnectorOf
+<http://iwu.fraunhofer.de/h2link/ssp/isConnectorOf> rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                                                    rdf:type owl:FunctionalProperty ,
+                                                             owl:AsymmetricProperty ,
+                                                             owl:IrreflexiveProperty ;
+                                                    rdfs:domain <http://iwu.fraunhofer.de/h2link/ssp/Connector> ;
+                                                    rdfs:range <http://iwu.fraunhofer.de/h2link/ssp/Component> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://iwu.fraunhofer.de/h2link/fmi/startTime
+fmi:startTime rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain fmi:DefaultExperiment .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/stopTime
+fmi:stopTime rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain fmi:DefaultExperiment .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iwu.fraunhofer.de/h2link/fmi/CausalityValue
+fmi:CausalityValue rdf:type owl:Class ;
+                   rdfs:subClassOf fmi:VariableAttribute .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/DataType
+fmi:DataType rdf:type owl:Class ;
+             rdfs:subClassOf fmi:VariableAttribute .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/DefaultExperiment
+fmi:DefaultExperiment rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                                        owl:someValuesFrom fmi:SystemStructureDescription
+                                      ] .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement
+fmi:FmiModelDescriptionElement rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/FmuModel
+fmi:FmuModel rdf:type owl:Class ;
+             owl:equivalentClass <http://iwu.fraunhofer.de/h2link/ssp/Component> ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty fmi:hasModelDescr ;
+                               owl:someValuesFrom fmi:FmiModelDescriptionElement
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty port:hasPort ;
+                               owl:someValuesFrom port:Port
+                             ] .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/InitialValue
+fmi:InitialValue rdf:type owl:Class ;
+                 rdfs:subClassOf fmi:VariableAttribute .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Parameter
+fmi:Parameter rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable
+fmi:ScalarVariable rdf:type owl:Class ;
+                   owl:equivalentClass <http://iwu.fraunhofer.de/h2link/ssp/Connector> ;
+                   owl:disjointWith port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/SystemStructureDescription
+fmi:SystemStructureDescription rdf:type owl:Class ;
+                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                                                 owl:someValuesFrom fmi:DefaultExperiment
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass <http://iwu.fraunhofer.de/h2link/ssp/System>
+                                               ] .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/VariabilityValue
+fmi:VariabilityValue rdf:type owl:Class ;
+                     rdfs:subClassOf fmi:VariableAttribute .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/VariableAttribute
+fmi:VariableAttribute rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Junction
+port:Junction rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Port
+port:Port rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/PortType
+port:PortType rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/VariableRole
+port:VariableRole rdf:type owl:Class .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/0-junction
+<http://iwu.fraunhofer.de/h2link/port/0-junction> rdf:type owl:Class ;
+                                                  rdfs:subClassOf port:Junction ;
+                                                  owl:disjointWith <http://iwu.fraunhofer.de/h2link/port/1-junction> .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/1-junction
+<http://iwu.fraunhofer.de/h2link/port/1-junction> rdf:type owl:Class ;
+                                                  rdfs:subClassOf port:Junction .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/Component
+<http://iwu.fraunhofer.de/h2link/ssp/Component> rdf:type owl:Class ;
+                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasConnector> ;
+                                                                  owl:someValuesFrom <http://iwu.fraunhofer.de/h2link/ssp/Connector>
+                                                                ] .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/Connection
+<http://iwu.fraunhofer.de/h2link/ssp/Connection> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/connectsFrom> ;
+                                                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                              owl:onClass <http://iwu.fraunhofer.de/h2link/ssp/Connector>
+                                                                                            ]
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/connectsTo> ;
+                                                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                              owl:onClass <http://iwu.fraunhofer.de/h2link/ssp/Connector>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                                                                   owl:someValuesFrom <http://iwu.fraunhofer.de/h2link/ssp/System>
+                                                                 ] .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/Connector
+<http://iwu.fraunhofer.de/h2link/ssp/Connector> rdf:type owl:Class ;
+                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty fmi:causality ;
+                                                                  owl:someValuesFrom fmi:CausalityValue
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasParent> ;
+                                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                       owl:unionOf ( <http://iwu.fraunhofer.de/h2link/ssp/Component>
+                                                                                                     <http://iwu.fraunhofer.de/h2link/ssp/System>
+                                                                                                   )
+                                                                                     ]
+                                                                ] .
+
+
+###  http://iwu.fraunhofer.de/h2link/ssp/System
+<http://iwu.fraunhofer.de/h2link/ssp/System> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://iwu.fraunhofer.de/h2link/ssp/hasChild> ;
+                                                               owl:someValuesFrom <http://iwu.fraunhofer.de/h2link/ssp/Component>
+                                                             ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Approx
+fmi:Approx rdf:type owl:NamedIndividual ,
+                    fmi:InitialValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Boolean
+fmi:Boolean rdf:type owl:NamedIndividual ,
+                     fmi:DataType .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Calculated
+fmi:Calculated rdf:type owl:NamedIndividual ,
+                        fmi:InitialValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/CalculatedParameter
+fmi:CalculatedParameter rdf:type owl:NamedIndividual ,
+                                 fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Constant
+fmi:Constant rdf:type owl:NamedIndividual ,
+                      fmi:VariabilityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Continuous
+fmi:Continuous rdf:type owl:NamedIndividual ,
+                        fmi:VariabilityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Discrete
+fmi:Discrete rdf:type owl:NamedIndividual ,
+                      fmi:VariabilityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Enumeration
+fmi:Enumeration rdf:type owl:NamedIndividual ,
+                         fmi:DataType .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Exact
+fmi:Exact rdf:type owl:NamedIndividual ,
+                   fmi:InitialValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Fixed
+fmi:Fixed rdf:type owl:NamedIndividual ,
+                   fmi:VariabilityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Independent
+fmi:Independent rdf:type owl:NamedIndividual ,
+                         fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Input
+fmi:Input rdf:type owl:NamedIndividual ,
+                   fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Integer
+fmi:Integer rdf:type owl:NamedIndividual ,
+                     fmi:DataType .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Local
+fmi:Local rdf:type owl:NamedIndividual ,
+                   fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Output
+fmi:Output rdf:type owl:NamedIndividual ,
+                    fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Parameter
+fmi:Parameter rdf:type owl:NamedIndividual ,
+                       fmi:CausalityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Real
+fmi:Real rdf:type owl:NamedIndividual ,
+                  fmi:DataType .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/String
+fmi:String rdf:type owl:NamedIndividual ,
+                    fmi:DataType .
+
+
+###  http://iwu.fraunhofer.de/h2link/fmi/Tunable
+fmi:Tunable rdf:type owl:NamedIndividual ,
+                     fmi:VariabilityValue .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/AngularFrequency
+port:AngularFrequency rdf:type owl:NamedIndividual ,
+                               port:VariableRole ;
+                      port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/CompressibleFluidPortType
+port:CompressibleFluidPortType rdf:type owl:NamedIndividual ,
+                                        port:PortType ;
+                               port:requires port:MassFlow ,
+                                             port:Pressure ,
+                                             port:Temperature .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Current
+port:Current rdf:type owl:NamedIndividual ,
+                      port:VariableRole ;
+             port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/DirectRadiation
+port:DirectRadiation rdf:type owl:NamedIndividual ,
+                              port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Effort
+port:Effort rdf:type owl:NamedIndividual .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/EntropyFlow
+port:EntropyFlow rdf:type owl:NamedIndividual ,
+                          port:VariableRole ;
+                 port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/EntropyPortType
+port:EntropyPortType rdf:type owl:NamedIndividual ,
+                              port:PortType ;
+                     port:requires port:EntropyFlow ,
+                                   port:Temperature .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Flow
+port:Flow rdf:type owl:NamedIndividual .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/FluidMixturePortType
+port:FluidMixturePortType rdf:type owl:NamedIndividual ,
+                                   port:PortType ;
+                          port:requires port:Pressure ,
+                                        port:SubstanceAmountFraction ,
+                                        port:VolumeFlow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/FluidPortType
+port:FluidPortType rdf:type owl:NamedIndividual ,
+                            port:PortType ;
+                   port:requires port:Pressure ,
+                                 port:VolumeFlow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Force
+port:Force rdf:type owl:NamedIndividual ,
+                    port:VariableRole ;
+           port:bondGraphRole port:Effort .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Frequency
+port:Frequency rdf:type owl:NamedIndividual ,
+                        port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/HeatConductionPortType
+port:HeatConductionPortType rdf:type owl:NamedIndividual ,
+                                     port:PortType ;
+                            port:requires port:HeatFlow ,
+                                          port:Temperature .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/HeatFlow
+port:HeatFlow rdf:type owl:NamedIndividual ,
+                       port:VariableRole ;
+              port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/IndirectRadiation
+port:IndirectRadiation rdf:type owl:NamedIndividual ,
+                                port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/MassFlow
+port:MassFlow rdf:type owl:NamedIndividual ,
+                       port:VariableRole ;
+              port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/NominalVoltage
+port:NominalVoltage rdf:type owl:NamedIndividual ,
+                             port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Power
+port:Power rdf:type owl:NamedIndividual ,
+                    port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/PowerBondElectricsPortType
+port:PowerBondElectricsPortType rdf:type owl:NamedIndividual ,
+                                         port:PortType ;
+                                port:requires port:Current ,
+                                              port:Voltage .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Pressure
+port:Pressure rdf:type owl:NamedIndividual ,
+                       port:VariableRole ;
+              port:bondGraphRole port:Effort .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/RotationalMechanicsPortType
+port:RotationalMechanicsPortType rdf:type owl:NamedIndividual ,
+                                          port:PortType ;
+                                 port:requires port:AngularFrequency ,
+                                               port:Torque .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/SimpleElectricsPortType
+port:SimpleElectricsPortType rdf:type owl:NamedIndividual ,
+                                      port:PortType ;
+                             port:requires port:Frequency ,
+                                           port:NominalVoltage ,
+                                           port:Power .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/SubstanceAmountFraction
+port:SubstanceAmountFraction rdf:type owl:NamedIndividual ,
+                                      port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/SunPortType
+port:SunPortType rdf:type owl:NamedIndividual ,
+                          port:PortType ;
+                 port:requires port:DirectRadiation ,
+                               port:IndirectRadiation ,
+                               port:Time .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Temperature
+port:Temperature rdf:type owl:NamedIndividual ,
+                          port:VariableRole ;
+                 port:bondGraphRole port:Effort .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Time
+port:Time rdf:type owl:NamedIndividual ,
+                   port:VariableRole .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Torque
+port:Torque rdf:type owl:NamedIndividual ,
+                     port:VariableRole ;
+            port:bondGraphRole port:Effort .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/TranslationalMechanicsPortType
+port:TranslationalMechanicsPortType rdf:type owl:NamedIndividual ,
+                                             port:PortType ;
+                                    port:requires port:Force ,
+                                                  port:Velocity .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Velocity
+port:Velocity rdf:type owl:NamedIndividual ,
+                       port:VariableRole ;
+              port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/Voltage
+port:Voltage rdf:type owl:NamedIndividual ,
+                      port:VariableRole ;
+             port:bondGraphRole port:Effort .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/VolumeFlow
+port:VolumeFlow rdf:type owl:NamedIndividual ,
+                         port:VariableRole ;
+                port:bondGraphRole port:Flow .
+
+
+###  http://iwu.fraunhofer.de/h2link/port/WindPortType
+port:WindPortType rdf:type owl:NamedIndividual ,
+                           port:PortType ;
+                  port:requires port:Force ,
+                                port:Velocity .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( fmi:hasModelDescr
+                fmi:hasParameter
+                fmi:hasVariable
+                port:hasPort
+                <http://iwu.fraunhofer.de/h2link/ssp/hasConnector>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( fmi:isModelDescrOf
+                fmi:isParameterOf
+                fmi:isVariableOf
+                port:isPortOf
+                <http://iwu.fraunhofer.de/h2link/ssp/isConnectorOf>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

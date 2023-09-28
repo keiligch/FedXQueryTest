@@ -1,0 +1,1084 @@
+@prefix : <http://iwu.fraunhofer.de/h2link/db/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+<http://iwu.fraunhofer.de/h2link/db/> a owl:Ontology;
+owl:imports <http://iwu.fraunhofer.de/h2link/fmi/> .
+:019afb40-2148-4fdd-9c86-c4128383489a :timeStamp "2023-09-27T16:19:57.057913"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :019afb40-2148-4fdd-9c86-c4128383489a_windmodel;
+a :Experiment .
+:019afb40-2148-4fdd-9c86-c4128383489a_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/019afb40-2148-4fdd-9c86-c4128383489a_windmodel/019afb40-2148-4fdd-9c86-c4128383489a_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :019afb40-2148-4fdd-9c86-c4128383489a;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/019afb40-2148-4fdd-9c86-c4128383489a_windmodel/019afb40-2148-4fdd-9c86-c4128383489a_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :019afb40-2148-4fdd-9c86-c4128383489a_windmodel;
+a :PortInstance .
+:022d7c3d-0477-4af7-b412-15b514f0b381 :timeStamp "2023-09-28T09:13:52.362344"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :022d7c3d-0477-4af7-b412-15b514f0b381_h2digital_wka;
+a :Experiment .
+:022d7c3d-0477-4af7-b412-15b514f0b381_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/022d7c3d-0477-4af7-b412-15b514f0b381_h2digital_wka/022d7c3d-0477-4af7-b412-15b514f0b381_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :022d7c3d-0477-4af7-b412-15b514f0b381;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/022d7c3d-0477-4af7-b412-15b514f0b381_h2digital_wka/022d7c3d-0477-4af7-b412-15b514f0b381_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :022d7c3d-0477-4af7-b412-15b514f0b381_h2digital_wka;
+a :PortInstance .
+:05df5498-7d57-4b52-afbd-643fb33df4ca :timeStamp "2023-09-18T13:28:50.020347"^^xsd:dateTime;
+a :Experiment .
+:09105c9a-cf4c-498d-8fa9-e48a23fe51b9 :timeStamp "2023-09-20T10:54:09.563850"^^xsd:dateTime;
+a :Experiment .
+:111f73c7-beb7-4ba5-901d-0a6eec0b75b2 :timeStamp "2023-09-28T10:01:13.535044"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :111f73c7-beb7-4ba5-901d-0a6eec0b75b2_windmodel;
+a :Experiment .
+:111f73c7-beb7-4ba5-901d-0a6eec0b75b2_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :111f73c7-beb7-4ba5-901d-0a6eec0b75b2;
+a :ModelInstance .
+:13fb8c63-9455-4ee3-bbb6-51c5af4f51f0 :timeStamp "2023-09-28T09:14:36.580708"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasConnection> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_WmWindportWkaWindportConnection;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_h2digital_wka,:13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel;
+a :Experiment .
+:13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_WmWindportWkaWindportConnection <http://iwu.fraunhofer.de/h2link/ssp/connectsFrom> <http://iwu.fraunhofer.de/h2link/db/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/connectsTo> <http://iwu.fraunhofer.de/h2link/db/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_h2digital_wka/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isConnectionOf> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0;
+a <http://iwu.fraunhofer.de/h2link/ssp/Connection> .
+:13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_h2digital_wka/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_h2digital_wka/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_h2digital_wka;
+a :PortInstance .
+:13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel/13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :13fb8c63-9455-4ee3-bbb6-51c5af4f51f0_windmodel;
+a :PortInstance .
+:14c53019-6aa1-463d-9641-6a4ae9df4030 :timeStamp "2023-09-28T09:33:42.741482"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel;
+a :Experiment .
+:14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel/14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :14c53019-6aa1-463d-9641-6a4ae9df4030;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel/14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :14c53019-6aa1-463d-9641-6a4ae9df4030_windmodel;
+a :PortInstance .
+:1b261a7e-1398-47a3-958e-9f1ce47a1a70 :timeStamp "2023-09-18T15:02:01.658030"^^xsd:dateTime;
+a :Experiment .
+:209b7d47-00c4-4590-9412-17e79f536e2b :timeStamp "2023-09-27T16:36:01.934024"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :209b7d47-00c4-4590-9412-17e79f536e2b_h2digital_wka;
+a :Experiment .
+:209b7d47-00c4-4590-9412-17e79f536e2b_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/209b7d47-00c4-4590-9412-17e79f536e2b_h2digital_wka/209b7d47-00c4-4590-9412-17e79f536e2b_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :209b7d47-00c4-4590-9412-17e79f536e2b;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/209b7d47-00c4-4590-9412-17e79f536e2b_h2digital_wka/209b7d47-00c4-4590-9412-17e79f536e2b_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :209b7d47-00c4-4590-9412-17e79f536e2b_h2digital_wka;
+a :PortInstance .
+:2183f87d-86fd-4cf3-8b4c-1f7b38673716 :timeStamp "2023-09-28T09:02:29.811635"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel;
+a :Experiment .
+:2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel/2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :2183f87d-86fd-4cf3-8b4c-1f7b38673716;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel/2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :2183f87d-86fd-4cf3-8b4c-1f7b38673716_windmodel;
+a :PortInstance .
+:26849995-a1da-4e5f-b19b-bd8e22b3a014 :timeStamp "2023-09-18T14:36:17.792802"^^xsd:dateTime;
+a :Experiment .
+:26cf7a4c-682b-4edb-abc8-f72e95982de1 :timeStamp "2023-09-28T09:54:50.019207"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :26cf7a4c-682b-4edb-abc8-f72e95982de1_h2digital_wka;
+a :Experiment .
+:26cf7a4c-682b-4edb-abc8-f72e95982de1_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/26cf7a4c-682b-4edb-abc8-f72e95982de1_h2digital_wka/26cf7a4c-682b-4edb-abc8-f72e95982de1_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :26cf7a4c-682b-4edb-abc8-f72e95982de1;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/26cf7a4c-682b-4edb-abc8-f72e95982de1_h2digital_wka/26cf7a4c-682b-4edb-abc8-f72e95982de1_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :26cf7a4c-682b-4edb-abc8-f72e95982de1_h2digital_wka;
+a :PortInstance .
+:309d44be-f2ca-4261-8565-c7a0a16d1f42 :timeStamp "2023-09-20T11:07:54.827048"^^xsd:dateTime;
+a :Experiment .
+:468a4caf-a26a-4eec-bcef-618a2f2a4ef8 :timeStamp "2023-09-27T16:25:56.742641"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :468a4caf-a26a-4eec-bcef-618a2f2a4ef8_h2digital_wka,:468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel;
+a :Experiment .
+:468a4caf-a26a-4eec-bcef-618a2f2a4ef8_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_h2digital_wka/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :468a4caf-a26a-4eec-bcef-618a2f2a4ef8;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_h2digital_wka/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :468a4caf-a26a-4eec-bcef-618a2f2a4ef8_h2digital_wka;
+a :PortInstance .
+:468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :468a4caf-a26a-4eec-bcef-618a2f2a4ef8;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel/468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :468a4caf-a26a-4eec-bcef-618a2f2a4ef8_windmodel;
+a :PortInstance .
+:48fe2a2a-8a20-4473-b311-49cf75803c03 :timeStamp "2023-09-27T16:16:37.975443"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel;
+a :Experiment .
+:48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel/48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :48fe2a2a-8a20-4473-b311-49cf75803c03;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel/48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :48fe2a2a-8a20-4473-b311-49cf75803c03_windmodel;
+a :PortInstance .
+:4dd7f0ee-c218-433a-9178-3072e2cbc76a :timeStamp "2023-09-18T14:45:59.757850"^^xsd:dateTime;
+a :Experiment .
+:534d07d5-4a8c-4522-9551-23fde003f1e2 :timeStamp "2023-09-28T09:57:40.840015"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :534d07d5-4a8c-4522-9551-23fde003f1e2_h2digital_wka,:534d07d5-4a8c-4522-9551-23fde003f1e2_windmodel;
+a :Experiment .
+:534d07d5-4a8c-4522-9551-23fde003f1e2_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :534d07d5-4a8c-4522-9551-23fde003f1e2;
+a :ModelInstance .
+:534d07d5-4a8c-4522-9551-23fde003f1e2_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :534d07d5-4a8c-4522-9551-23fde003f1e2;
+a :ModelInstance .
+:59bc8d6a-7871-4073-af69-e1aef83a22a9 :timeStamp "2023-09-20T10:56:28.750994"^^xsd:dateTime;
+a :Experiment .
+:5b8fc927-e824-421d-920c-7c51542badf7 :timeStamp "2023-09-28T09:46:10.997308"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :5b8fc927-e824-421d-920c-7c51542badf7_h2digital_wka;
+a :Experiment .
+:5b8fc927-e824-421d-920c-7c51542badf7_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/5b8fc927-e824-421d-920c-7c51542badf7_h2digital_wka/5b8fc927-e824-421d-920c-7c51542badf7_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :5b8fc927-e824-421d-920c-7c51542badf7;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/5b8fc927-e824-421d-920c-7c51542badf7_h2digital_wka/5b8fc927-e824-421d-920c-7c51542badf7_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :5b8fc927-e824-421d-920c-7c51542badf7_h2digital_wka;
+a :PortInstance .
+:5d6c880f-0ead-47b5-9c46-66f53f05bf2b :timeStamp "2023-09-27T15:26:51.780701"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :5d6c880f-0ead-47b5-9c46-66f53f05bf2b_h2digital_wka;
+a :Experiment .
+:5d6c880f-0ead-47b5-9c46-66f53f05bf2b_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/5d6c880f-0ead-47b5-9c46-66f53f05bf2b_h2digital_wka/5d6c880f-0ead-47b5-9c46-66f53f05bf2b_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :5d6c880f-0ead-47b5-9c46-66f53f05bf2b;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/5d6c880f-0ead-47b5-9c46-66f53f05bf2b_h2digital_wka/5d6c880f-0ead-47b5-9c46-66f53f05bf2b_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :5d6c880f-0ead-47b5-9c46-66f53f05bf2b_h2digital_wka;
+a :PortInstance .
+:5dbcf227-130b-4079-9147-e3db2b1b4a39 :timeStamp "2023-09-27T16:04:40.427759"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :5dbcf227-130b-4079-9147-e3db2b1b4a39_h2digital_wka;
+a :Experiment .
+:5dbcf227-130b-4079-9147-e3db2b1b4a39_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/5dbcf227-130b-4079-9147-e3db2b1b4a39_h2digital_wka/5dbcf227-130b-4079-9147-e3db2b1b4a39_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :5dbcf227-130b-4079-9147-e3db2b1b4a39;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/5dbcf227-130b-4079-9147-e3db2b1b4a39_h2digital_wka/5dbcf227-130b-4079-9147-e3db2b1b4a39_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :5dbcf227-130b-4079-9147-e3db2b1b4a39_h2digital_wka;
+a :PortInstance .
+:642c86b3-23d8-435b-988a-7109ea9af6e7 :timeStamp "2023-09-27T15:28:14.823029"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :642c86b3-23d8-435b-988a-7109ea9af6e7_h2digital_wka;
+a :Experiment .
+:642c86b3-23d8-435b-988a-7109ea9af6e7_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/642c86b3-23d8-435b-988a-7109ea9af6e7_h2digital_wka/642c86b3-23d8-435b-988a-7109ea9af6e7_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :642c86b3-23d8-435b-988a-7109ea9af6e7;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/642c86b3-23d8-435b-988a-7109ea9af6e7_h2digital_wka/642c86b3-23d8-435b-988a-7109ea9af6e7_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :642c86b3-23d8-435b-988a-7109ea9af6e7_h2digital_wka;
+a :PortInstance .
+:70125391-57a1-48c4-a4ea-447dabd3f037 :timeStamp "2023-09-20T11:10:10.780227"^^xsd:dateTime;
+a :Experiment .
+:788b78a7-e06d-4803-a069-10b2fa28ae6a :timeStamp "2023-09-20T13:13:06.297231"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasConnection> :788b78a7-e06d-4803-a069-10b2fa28ae6a_WmWindportWkaWindportConnection;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :788b78a7-e06d-4803-a069-10b2fa28ae6a_h2digital_wka,:788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel;
+a :Experiment .
+:788b78a7-e06d-4803-a069-10b2fa28ae6a_WmWindportWkaWindportConnection <http://iwu.fraunhofer.de/h2link/ssp/connectsFrom> <http://iwu.fraunhofer.de/h2link/db/788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel/788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/connectsTo> <http://iwu.fraunhofer.de/h2link/db/788b78a7-e06d-4803-a069-10b2fa28ae6a_h2digital_wka/788b78a7-e06d-4803-a069-10b2fa28ae6a_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isConnectionOf> :788b78a7-e06d-4803-a069-10b2fa28ae6a;
+a <http://iwu.fraunhofer.de/h2link/ssp/Connection> .
+:788b78a7-e06d-4803-a069-10b2fa28ae6a_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/788b78a7-e06d-4803-a069-10b2fa28ae6a_h2digital_wka/788b78a7-e06d-4803-a069-10b2fa28ae6a_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :788b78a7-e06d-4803-a069-10b2fa28ae6a;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/788b78a7-e06d-4803-a069-10b2fa28ae6a_h2digital_wka/788b78a7-e06d-4803-a069-10b2fa28ae6a_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :788b78a7-e06d-4803-a069-10b2fa28ae6a_h2digital_wka;
+a :PortInstance .
+:788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel/788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :788b78a7-e06d-4803-a069-10b2fa28ae6a;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel/788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :788b78a7-e06d-4803-a069-10b2fa28ae6a_windmodel;
+a :PortInstance .
+:78ae1f31-8c53-4126-8f80-29a65d49435e :timeStamp "2023-09-28T09:19:04.516737"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel;
+a :Experiment .
+:78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel/78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :78ae1f31-8c53-4126-8f80-29a65d49435e;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel/78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :78ae1f31-8c53-4126-8f80-29a65d49435e_windmodel;
+a :PortInstance .
+:7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4 :timeStamp "2023-09-20T11:48:30.362571"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4_h2digital_wka,:7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4_windmodel;
+a :Experiment .
+:7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4;
+a :ModelInstance .
+:7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :7b479694-ba60-4fb6-9dbf-d3f0d9e1bee4;
+a :ModelInstance .
+:85c9114f-bd75-4a9a-a455-ea439eb7d389 :timeStamp "2023-09-20T11:40:17.235540"^^xsd:dateTime;
+a :Experiment .
+:8b46b8a2-4c55-48e1-a643-338950031937 :timeStamp "2023-09-27T15:25:59.961333"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :8b46b8a2-4c55-48e1-a643-338950031937_windmodel;
+a :Experiment .
+:8b46b8a2-4c55-48e1-a643-338950031937_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/8b46b8a2-4c55-48e1-a643-338950031937_windmodel/8b46b8a2-4c55-48e1-a643-338950031937_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :8b46b8a2-4c55-48e1-a643-338950031937;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/8b46b8a2-4c55-48e1-a643-338950031937_windmodel/8b46b8a2-4c55-48e1-a643-338950031937_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :8b46b8a2-4c55-48e1-a643-338950031937_windmodel;
+a :PortInstance .
+:9007f2ba-f645-4058-8870-d6efe7b8a8b4 :timeStamp "2023-09-27T15:24:08.086937"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel;
+a :Experiment .
+:9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel/9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :9007f2ba-f645-4058-8870-d6efe7b8a8b4;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel/9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :9007f2ba-f645-4058-8870-d6efe7b8a8b4_windmodel;
+a :PortInstance .
+:95a78ed3-c2d8-4fe1-9e19-8752e2c52986 :timeStamp "2023-09-27T16:21:31.858643"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :95a78ed3-c2d8-4fe1-9e19-8752e2c52986_h2digital_wka,:95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel;
+a :Experiment .
+:95a78ed3-c2d8-4fe1-9e19-8752e2c52986_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_h2digital_wka/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :95a78ed3-c2d8-4fe1-9e19-8752e2c52986;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_h2digital_wka/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :95a78ed3-c2d8-4fe1-9e19-8752e2c52986_h2digital_wka;
+a :PortInstance .
+:95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :95a78ed3-c2d8-4fe1-9e19-8752e2c52986;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel/95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :95a78ed3-c2d8-4fe1-9e19-8752e2c52986_windmodel;
+a :PortInstance .
+:95a9f427-1964-4f79-afa9-4a0276d0b7d2 :timeStamp "2023-09-27T16:14:35.437827"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :95a9f427-1964-4f79-afa9-4a0276d0b7d2_h2digital_wka,:95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel;
+a :Experiment .
+:95a9f427-1964-4f79-afa9-4a0276d0b7d2_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/95a9f427-1964-4f79-afa9-4a0276d0b7d2_h2digital_wka/95a9f427-1964-4f79-afa9-4a0276d0b7d2_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :95a9f427-1964-4f79-afa9-4a0276d0b7d2;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/95a9f427-1964-4f79-afa9-4a0276d0b7d2_h2digital_wka/95a9f427-1964-4f79-afa9-4a0276d0b7d2_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :95a9f427-1964-4f79-afa9-4a0276d0b7d2_h2digital_wka;
+a :PortInstance .
+:95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel/95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :95a9f427-1964-4f79-afa9-4a0276d0b7d2;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel/95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :95a9f427-1964-4f79-afa9-4a0276d0b7d2_windmodel;
+a :PortInstance .
+:9c0b1abc-2ad2-499d-a6fc-1903ef01512a :timeStamp "2023-09-20T11:02:16.594422"^^xsd:dateTime;
+a :Experiment .
+:9c72cbed-89f5-41cb-9ae6-eae10fdad436 :timeStamp "2023-09-28T09:35:34.664017"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel;
+a :Experiment .
+:9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel/9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :9c72cbed-89f5-41cb-9ae6-eae10fdad436;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel/9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :9c72cbed-89f5-41cb-9ae6-eae10fdad436_windmodel;
+a :PortInstance .
+:WindPowerPlants.Plants.GenericVariableSpeed :shared "false"^^xsd:boolean;
+:source "Windmill_reduced.fmu";
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Ideal wind power plant with variable speed generator";
+<http://iwu.fraunhofer.de/h2link/fmi/fmiVersion> "2.0";
+<http://iwu.fraunhofer.de/h2link/fmi/generationDateAndTime> "2021-10-14T16:24:52Z";
+<http://iwu.fraunhofer.de/h2link/fmi/generationTool> "OpenModelica Compiler OpenModelica v1.18.0 (64-bit)";
+<http://iwu.fraunhofer.de/h2link/fmi/guid> "{c564e7b8-1be2-40ca-8b57-4902e00cd01b}";
+<http://iwu.fraunhofer.de/h2link/fmi/hasModelDescr> <http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#CoSimulation>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#DefaultExperiment>;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#D>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#JGenerator>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestCurrentInput1>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestCurrentOutput1>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestCurrentOutput2>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestVoltageInput1>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestVoltageOutput1>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestVoltageOutput2>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#inertia.w>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#power>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#speedSensor.flange.tau>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#torqueLimiter.lowerLimit.y%5B1%5D>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#v>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#windturbine.lambda>,<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#windturbine.limIntegrator.use_reset>;
+<http://iwu.fraunhofer.de/h2link/fmi/modelName> "WindPowerPlants.Plants.GenericVariableSpeed";
+<http://iwu.fraunhofer.de/h2link/fmi/variableNamingConvention> "structured";
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#ElectricPort>;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmuModel> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#CoSimulation> <http://iwu.fraunhofer.de/h2link/fmi/canBeInstantiatedOnlyOncePerProcess> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canGetAndSetFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canHandleVariableCommunicationStepSize> "true"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canInterpolateInputs> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canNotUseMemoryManagementFunctions> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canRunAsynchronuously> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canSerializeFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/maxOutputDerivativeOrder> "0"^^xsd:int;
+<http://iwu.fraunhofer.de/h2link/fmi/modelIdentifier> "WindPowerPlants_Plants_GenericVariableSpeed";
+<http://iwu.fraunhofer.de/h2link/fmi/needsExecutionTool> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/providesDirectionalDerivative> "false"^^xsd:boolean;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#D> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Diameter of wind turbine";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "D";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "90.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "m";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "53"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#DefaultExperiment> <http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/startTime> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/stepSize> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/stopTime> "1.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/tolerance> "1.0E-6"^^xsd:double;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#ElectricPort> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/port/isPortOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/port/portType> <http://iwu.fraunhofer.de/h2link/port/PowerBondElectricsPortType>;
+a <http://iwu.fraunhofer.de/h2link/port/Port>;
+rdfs:label "WKA Electric Port" .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#JGenerator> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/CalculatedParameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Moment of inertia of generator";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "JGenerator";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "kg.m2";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "54"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestCurrentInput1> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "TestCurrentInput1";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "TestCurrentInput1";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "A";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "997"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestCurrentOutput1> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "TestCurrentOutput1";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "TestCurrentOutput1";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "A";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "993"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestCurrentOutput2> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "TestCurrentOutput2";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "TestCurrentOutput2";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "A";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "994"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestVoltageInput1> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "TestVoltageInput1";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "TestVoltageInput1";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "V";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "998"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestVoltageOutput1> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "TestVoltageOutput1";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "TestVoltageOutput1";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "V";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "996"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#TestVoltageOutput2> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "TestVoltageOutput2";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "TestVoltageOutput2";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "V";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "995"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#inertia.w> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Absolute angular velocity of component (= der(phi))";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "inertia.w";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "rad/s";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "32"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#power> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Real power";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "power";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "W";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "33"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#speedSensor.flange.tau> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Cut torque in the flange";
+<http://iwu.fraunhofer.de/h2link/fmi/initial> <http://iwu.fraunhofer.de/h2link/fmi/Exact>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "speedSensor.flange.tau";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "N.m";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "34"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#torqueLimiter.lowerLimit.y%5B1%5D> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real output signals";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "torqueLimiter.lowerLimit.y[1]";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "35"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#v> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Wind velocity";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "v";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "m/s";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "38"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#windturbine.lambda> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Tip speed ratio";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "windturbine.lambda";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "39"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/WindPowerPlants.Plants.GenericVariableSpeed#windturbine.limIntegrator.use_reset> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/CalculatedParameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Boolean>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "= true, if reset port enabled";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :WindPowerPlants.Plants.GenericVariableSpeed;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "windturbine.limIntegrator.use_reset";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "22"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+:a19dc3dc-9983-413c-be6e-38e3b98243bc :timeStamp "2023-09-20T10:55:40.759412"^^xsd:dateTime;
+a :Experiment .
+:ae584cb7-da85-436f-bfbe-39dfc9810d52 :timeStamp "2023-09-20T11:39:39.088189"^^xsd:dateTime;
+a :Experiment .
+:b7b6c173-7879-4aad-8c65-f90e250061eb :timeStamp "2023-09-20T11:03:32.067752"^^xsd:dateTime;
+a :Experiment .
+:c1438086-78c0-41d7-9c6a-e44b27edc5c4 :timeStamp "2023-09-28T09:56:27.291026"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka,:c1438086-78c0-41d7-9c6a-e44b27edc5c4_windmodel;
+a :Experiment .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_airpressure/c1438086-78c0-41d7-9c6a-e44b27edc5c4_airpressure> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.k/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.k> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.u/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.u> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.y/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.y> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gustspeed/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gustspeed> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+:c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_airpressure/c1438086-78c0-41d7-9c6a-e44b27edc5c4_airpressure>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.k/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.k>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.u/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.u>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.y/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gain.y>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gustspeed/c1438086-78c0-41d7-9c6a-e44b27edc5c4_gustspeed>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_power/c1438086-78c0-41d7-9c6a-e44b27edc5c4_power>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltage/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltage>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.k/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.k>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.y/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.y>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_winddirection/c1438086-78c0-41d7-9c6a-e44b27edc5c4_winddirection>,<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_windspeed/c1438086-78c0-41d7-9c6a-e44b27edc5c4_windspeed>;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka/c1438086-78c0-41d7-9c6a-e44b27edc5c4_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka/c1438086-78c0-41d7-9c6a-e44b27edc5c4_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :PortInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_power/c1438086-78c0-41d7-9c6a-e44b27edc5c4_power> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltage/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltage> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.k/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.k> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.y/c1438086-78c0-41d7-9c6a-e44b27edc5c4_voltageSource.y> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_winddirection/c1438086-78c0-41d7-9c6a-e44b27edc5c4_winddirection> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+:c1438086-78c0-41d7-9c6a-e44b27edc5c4_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/c1438086-78c0-41d7-9c6a-e44b27edc5c4_windspeed/c1438086-78c0-41d7-9c6a-e44b27edc5c4_windspeed> <http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :c1438086-78c0-41d7-9c6a-e44b27edc5c4_h2digital_wka;
+a :VariableInstance .
+:c4170706-1539-4cfa-934f-b486ebdf712c :timeStamp "2023-09-28T09:41:40.472103"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :c4170706-1539-4cfa-934f-b486ebdf712c_h2digital_wka;
+a :Experiment .
+:c4170706-1539-4cfa-934f-b486ebdf712c_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/c4170706-1539-4cfa-934f-b486ebdf712c_h2digital_wka/c4170706-1539-4cfa-934f-b486ebdf712c_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :c4170706-1539-4cfa-934f-b486ebdf712c;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/c4170706-1539-4cfa-934f-b486ebdf712c_h2digital_wka/c4170706-1539-4cfa-934f-b486ebdf712c_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :c4170706-1539-4cfa-934f-b486ebdf712c_h2digital_wka;
+a :PortInstance .
+:c66404f8-7278-4fb2-a1a0-7224ef1b752c :timeStamp "2023-09-27T15:25:19.804786"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel;
+a :Experiment .
+:c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel/c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :c66404f8-7278-4fb2-a1a0-7224ef1b752c;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel/c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :c66404f8-7278-4fb2-a1a0-7224ef1b752c_windmodel;
+a :PortInstance .
+:c7508333-65a3-43e5-b7fb-2cac7a61c355 :timeStamp "2023-09-18T14:27:38.939754"^^xsd:dateTime;
+a :Experiment .
+:c863d575-4382-447e-b533-f4631a2289fd :timeStamp "2023-09-18T13:31:27.580009"^^xsd:dateTime;
+a :Experiment .
+:c8758a3d-4fc2-45a0-ae78-c8a950e5276c :timeStamp "2023-09-18T13:50:02.610269"^^xsd:dateTime;
+a :Experiment .
+:ca83d670-3a18-4a91-871e-38497c9a82e1 :timeStamp "2023-09-28T09:41:00.596762"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel;
+a :Experiment .
+:ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel/ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :ca83d670-3a18-4a91-871e-38497c9a82e1;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel/ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :ca83d670-3a18-4a91-871e-38497c9a82e1_windmodel;
+a :PortInstance .
+:ccc1cd2f-80b2-43a9-9f11-09ca22ad6f9c :timeStamp "2023-09-18T13:30:16.816637"^^xsd:dateTime;
+a :Experiment .
+:ce90e6c5-2104-4b18-9f33-838c60ef2967 :timeStamp "2023-09-18T15:43:48.605375"^^xsd:dateTime;
+a :Experiment .
+:d60e7bf1-511d-405a-bc4b-00cbd7ff77ac :timeStamp "2023-09-18T14:11:37.431847"^^xsd:dateTime;
+a :Experiment .
+:e98f1c20-7376-4371-a4b1-a504cef158c7 :timeStamp "2023-09-27T15:30:59.281140"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel;
+a :Experiment .
+:e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel/e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :e98f1c20-7376-4371-a4b1-a504cef158c7;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel/e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :e98f1c20-7376-4371-a4b1-a504cef158c7_windmodel;
+a :PortInstance .
+:eb109ff9-1bec-406a-b4fe-85c9b44a36f8 :timeStamp "2023-09-28T09:19:52.194767"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :eb109ff9-1bec-406a-b4fe-85c9b44a36f8_h2digital_wka,:eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel;
+a :Experiment .
+:eb109ff9-1bec-406a-b4fe-85c9b44a36f8_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_h2digital_wka/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :eb109ff9-1bec-406a-b4fe-85c9b44a36f8;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_h2digital_wka/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :eb109ff9-1bec-406a-b4fe-85c9b44a36f8_h2digital_wka;
+a :PortInstance .
+:eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :eb109ff9-1bec-406a-b4fe-85c9b44a36f8;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel/eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :eb109ff9-1bec-406a-b4fe-85c9b44a36f8_windmodel;
+a :PortInstance .
+:ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb :timeStamp "2023-09-27T15:22:49.949261"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_h2digital_wka;
+a :Experiment .
+:ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_h2digital_wka/ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_h2digital_wka/ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :ecb47ec3-7d4a-45b1-870e-5801a3fbc2cb_h2digital_wka;
+a :PortInstance .
+:f05731e6-6722-4933-8097-f46bdb45bd89 :timeStamp "2023-09-28T09:34:14.729036"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :f05731e6-6722-4933-8097-f46bdb45bd89_h2digital_wka;
+a :Experiment .
+:f05731e6-6722-4933-8097-f46bdb45bd89_h2digital_wka :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fh2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/f05731e6-6722-4933-8097-f46bdb45bd89_h2digital_wka/f05731e6-6722-4933-8097-f46bdb45bd89_wka_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :f05731e6-6722-4933-8097-f46bdb45bd89;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/f05731e6-6722-4933-8097-f46bdb45bd89_h2digital_wka/f05731e6-6722-4933-8097-f46bdb45bd89_wka_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :f05731e6-6722-4933-8097-f46bdb45bd89_h2digital_wka;
+a :PortInstance .
+:faba412e-1549-4f47-af46-20df16ee861a :timeStamp "2023-09-20T10:04:00.930785"^^xsd:dateTime;
+a :Experiment .
+:fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8 :timeStamp "2023-09-28T09:45:12.455875"^^xsd:dateTime;
+<http://iwu.fraunhofer.de/h2link/ssp/hasModel> :fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel;
+a :Experiment .
+:fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel :instanceOf :http:%2F%2Fiwu.fraunhofer.de%2Fh2link%2Fdb%2Fwindmodel;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel/fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel_windport>;
+<http://iwu.fraunhofer.de/h2link/ssp/isModelOf> :fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8;
+a :ModelInstance .
+<http://iwu.fraunhofer.de/h2link/db/fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel/fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel_windport> <http://iwu.fraunhofer.de/h2link/port/isPortOf> :fc7a0a86-ad59-46ca-8a8c-f151ba69a8a8_windmodel;
+a :PortInstance .
+:h2digital_wka :shared "false"^^xsd:boolean;
+:source "beda17fec742e5747cc251867011dbe792563478.fmu";
+<http://iwu.fraunhofer.de/h2link/fmi/Description> "";
+<http://iwu.fraunhofer.de/h2link/fmi/FmiVersion> "2.0";
+<http://iwu.fraunhofer.de/h2link/fmi/GenerationDateAndTime> "2022-04-28T11:13:00Z";
+<http://iwu.fraunhofer.de/h2link/fmi/GenerationTool> "OpenModelica Compiler OpenModelica v1.18.0 (64-bit)";
+<http://iwu.fraunhofer.de/h2link/fmi/Guid> "{212b852f-f9f0-4a18-b257-99e8c454bcff}";
+<http://iwu.fraunhofer.de/h2link/fmi/ModelName> "h2digital_wka";
+<http://iwu.fraunhofer.de/h2link/fmi/VariableNamingConvention> "structured";
+<http://iwu.fraunhofer.de/h2link/fmi/hasModelDescr> <http://iwu.fraunhofer.de/h2link/db/h2digital_wka#CoSimulation>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#DefaultExperiment>;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/h2digital_wka#airpressure>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gain.k>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gain.u>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gain.y>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gustspeed>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#power>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#voltage>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#voltageSource.k>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#voltageSource.y>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#winddirection>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#windspeed>;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/h2digital_wka/wka_windport>;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmuModel> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#CoSimulation> <http://iwu.fraunhofer.de/h2link/fmi/CanBeInstantiatedOnlyOncePerProcess> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanGetAndSetFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanHandleVariableCommunicationStepSize> "true"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanInterpolateInputs> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanNotUseMemoryManagementFunctions> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanRunAsynchronuously> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanSerializeFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/MaxOutputDerivativeOrder> "0"^^xsd:int;
+<http://iwu.fraunhofer.de/h2link/fmi/ModelIdentifier> "h2digital_wka";
+<http://iwu.fraunhofer.de/h2link/fmi/NeedsExecutionTool> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/ProvidesDirectionalDerivative> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :h2digital_wka;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#DefaultExperiment> <http://iwu.fraunhofer.de/h2link/fmi/StartTime> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/StepSize> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/StopTime> "1.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/Tolerance> "1.0E-6"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :h2digital_wka;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#airpressure> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "airpressure";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "0"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Force>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gain.k> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Gain value multiplied with input signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gain.k";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "4000.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "1";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "7"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gain.u> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Input signal connector";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gain.u";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "5"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gain.y> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Output signal connector";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gain.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "2"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#gustspeed> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gustspeed";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "1"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#power> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "power";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "2"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#voltage> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "voltage";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "3"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#voltageSource.k> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Constant output value";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "voltageSource.k";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "230.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "8"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#voltageSource.y> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/CalculatedParameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real output signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "voltageSource.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "9"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#winddirection> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "winddirection";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "4"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#windspeed> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "windspeed";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "5"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Velocity>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2digital_wka/wka_windport> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/h2digital_wka#airpressure>,<http://iwu.fraunhofer.de/h2link/db/h2digital_wka#windspeed>;
+<http://iwu.fraunhofer.de/h2link/port/isPortOf> :h2digital_wka;
+<http://iwu.fraunhofer.de/h2link/port/portType> <http://iwu.fraunhofer.de/h2link/port/WindPortType>;
+a <http://iwu.fraunhofer.de/h2link/port/Port>;
+rdfs:label "wka_windport" .
+:h2druckspeicher :shared "false"^^xsd:boolean;
+:source "b9a83ee0a447d78756065f2c076bd1abde03a52f.fmu";
+<http://iwu.fraunhofer.de/h2link/fmi/description> "";
+<http://iwu.fraunhofer.de/h2link/fmi/fmiVersion> "2.0";
+<http://iwu.fraunhofer.de/h2link/fmi/generationDateAndTime> "2022-04-28T11:19:42Z";
+<http://iwu.fraunhofer.de/h2link/fmi/generationTool> "OpenModelica Compiler OpenModelica v1.18.0 (64-bit)";
+<http://iwu.fraunhofer.de/h2link/fmi/guid> "{a2fc70fa-d168-4ee7-8032-5b40b511f262}";
+<http://iwu.fraunhofer.de/h2link/fmi/hasModelDescr> <http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#CoSimulation>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#DefaultExperiment>;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#Druck_out>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#Summenformel>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#Summenformel_out>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#druck>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#fixedDelay.delayTime>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#fixedDelay.u>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#fixedDelay.y>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#massefluss>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#massefluss_out>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#temp>,<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#temp_out>;
+<http://iwu.fraunhofer.de/h2link/fmi/modelName> "h2druckspeicher";
+<http://iwu.fraunhofer.de/h2link/fmi/variableNamingConvention> "structured";
+a <http://iwu.fraunhofer.de/h2link/fmi/FmuModel> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#CoSimulation> <http://iwu.fraunhofer.de/h2link/fmi/canBeInstantiatedOnlyOncePerProcess> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canGetAndSetFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canHandleVariableCommunicationStepSize> "true"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canInterpolateInputs> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canNotUseMemoryManagementFunctions> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canRunAsynchronuously> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/canSerializeFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/maxOutputDerivativeOrder> "0"^^xsd:int;
+<http://iwu.fraunhofer.de/h2link/fmi/modelIdentifier> "h2druckspeicher";
+<http://iwu.fraunhofer.de/h2link/fmi/needsExecutionTool> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/providesDirectionalDerivative> "false"^^xsd:boolean;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#DefaultExperiment> <http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/startTime> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/stepSize> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/stopTime> "1.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/tolerance> "1.0E-6"^^xsd:double;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#Druck_out> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "Druck_out";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "0"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#Summenformel> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "Summenformel";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "1"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#Summenformel_out> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "Summenformel_out";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "2"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#druck> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "druck";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "3"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#fixedDelay.delayTime> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Delay time of output with respect to input signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "fixedDelay.delayTime";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "200.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "s";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "8"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#fixedDelay.u> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real input signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "fixedDelay.u";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "4"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#fixedDelay.y> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real output signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "fixedDelay.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "5"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#massefluss> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "massefluss";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "4"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#massefluss_out> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "massefluss_out";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "5"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#temp> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Input>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "temp";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "6"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/h2druckspeicher#temp_out> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :h2druckspeicher;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "temp_out";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "7"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+:windmodel :shared "true"^^xsd:boolean;
+:source "18eb40f71ce569fea2bf92abf9323bcb2b63d510.fmu";
+<http://iwu.fraunhofer.de/h2link/fmi/Description> "";
+<http://iwu.fraunhofer.de/h2link/fmi/FmiVersion> "2.0";
+<http://iwu.fraunhofer.de/h2link/fmi/GenerationDateAndTime> "2022-04-28T11:13:17Z";
+<http://iwu.fraunhofer.de/h2link/fmi/GenerationTool> "OpenModelica Compiler OpenModelica v1.18.0 (64-bit)";
+<http://iwu.fraunhofer.de/h2link/fmi/Guid> "{a1ea74b4-0d4e-4b7a-90da-40fbd9f875e7}";
+<http://iwu.fraunhofer.de/h2link/fmi/ModelName> "windmodel";
+<http://iwu.fraunhofer.de/h2link/fmi/VariableNamingConvention> "structured";
+<http://iwu.fraunhofer.de/h2link/fmi/hasModelDescr> <http://iwu.fraunhofer.de/h2link/db/windmodel#CoSimulation>,<http://iwu.fraunhofer.de/h2link/db/windmodel#DefaultExperiment>;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/windmodel#airpressure>,<http://iwu.fraunhofer.de/h2link/db/windmodel#const.k>,<http://iwu.fraunhofer.de/h2link/db/windmodel#const.y>,<http://iwu.fraunhofer.de/h2link/db/windmodel#const1.k>,<http://iwu.fraunhofer.de/h2link/db/windmodel#const1.y>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.amplitude>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.damping>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.f>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.offset>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.phase>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.startTime>,<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.y>,<http://iwu.fraunhofer.de/h2link/db/windmodel#gain.k>,<http://iwu.fraunhofer.de/h2link/db/windmodel#gain.u>,<http://iwu.fraunhofer.de/h2link/db/windmodel#gain.y>,<http://iwu.fraunhofer.de/h2link/db/windmodel#gustspeed>,<http://iwu.fraunhofer.de/h2link/db/windmodel#winddirection>,<http://iwu.fraunhofer.de/h2link/db/windmodel#windspeed>;
+<http://iwu.fraunhofer.de/h2link/fmi/shared> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/port/hasPort> <http://iwu.fraunhofer.de/h2link/db/windmodel/windmodel_windport>;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmuModel> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#CoSimulation> <http://iwu.fraunhofer.de/h2link/fmi/CanBeInstantiatedOnlyOncePerProcess> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanGetAndSetFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanHandleVariableCommunicationStepSize> "true"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanInterpolateInputs> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanNotUseMemoryManagementFunctions> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanRunAsynchronuously> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/CanSerializeFMUstate> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/MaxOutputDerivativeOrder> "0"^^xsd:int;
+<http://iwu.fraunhofer.de/h2link/fmi/ModelIdentifier> "windmodel";
+<http://iwu.fraunhofer.de/h2link/fmi/NeedsExecutionTool> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/ProvidesDirectionalDerivative> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :windmodel;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#DefaultExperiment> <http://iwu.fraunhofer.de/h2link/fmi/StartTime> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/StepSize> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/StopTime> "1.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/Tolerance> "1.0E-6"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/isModelDescrOf> :windmodel;
+a <http://iwu.fraunhofer.de/h2link/fmi/FmiModelDescriptionElement> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#airpressure> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "airpressure";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "0"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Force>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#const.k> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Constant output value";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "const.k";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "6"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#const.y> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/CalculatedParameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real output signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "const.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "7"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Current>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#const1.k> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Constant output value";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "const1.k";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "100000.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "8"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Voltage>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#const1.y> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/CalculatedParameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real output signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "const1.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "9"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.amplitude> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Amplitude of sine wave";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.amplitude";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "2.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "10"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Pressure>,<http://iwu.fraunhofer.de/h2link/port/Velocity>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.damping> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Damping coefficient of sine wave";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.damping";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "5.0E-4"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "s-1";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "11"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.f> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Frequency of sine wave";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.f";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "6.0E-4"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "Hz";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "12"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.offset> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Offset of output signal y";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.offset";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "10.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "13"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.phase> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Phase of sine wave";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.phase";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "0.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "rad";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "14"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.startTime> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Output y = offset for time < startTime";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.startTime";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "20.0"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "s";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "15"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/MassFlow>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#expSine.y> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Connector of Real output signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "expSine.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "3"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#gain.k> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Parameter>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Gain value multiplied with input signal";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gain.k";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/start> "1.02"^^xsd:double;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unit> "1";
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "16"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/fmi/variability> <http://iwu.fraunhofer.de/h2link/fmi/Fixed>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#gain.u> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Input signal connector";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gain.u";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "3"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#gain.y> <http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/description> "Output signal connector";
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gain.y";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "1"^^xsd:long;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#gustspeed> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "gustspeed";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "1"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Temperature>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#winddirection> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "winddirection";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "2"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Velocity>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel#windspeed> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/dataType> <http://iwu.fraunhofer.de/h2link/fmi/Real>;
+<http://iwu.fraunhofer.de/h2link/fmi/isVariableOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/fmi/name> "windspeed";
+<http://iwu.fraunhofer.de/h2link/fmi/relativeQuantity> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/unbounded> "false"^^xsd:boolean;
+<http://iwu.fraunhofer.de/h2link/fmi/valueReference> "3"^^xsd:long;
+<http://iwu.fraunhofer.de/h2link/port/variableRole> <http://iwu.fraunhofer.de/h2link/port/Velocity>;
+a <http://iwu.fraunhofer.de/h2link/fmi/ScalarVariable> .
+<http://iwu.fraunhofer.de/h2link/db/windmodel/windmodel_windport> <http://iwu.fraunhofer.de/h2link/fmi/causality> <http://iwu.fraunhofer.de/h2link/fmi/Output>;
+<http://iwu.fraunhofer.de/h2link/fmi/hasVariable> <http://iwu.fraunhofer.de/h2link/db/windmodel#airpressure>,<http://iwu.fraunhofer.de/h2link/db/windmodel#windspeed>;
+<http://iwu.fraunhofer.de/h2link/port/isPortOf> :windmodel;
+<http://iwu.fraunhofer.de/h2link/port/portType> <http://iwu.fraunhofer.de/h2link/port/WindPortType>;
+a <http://iwu.fraunhofer.de/h2link/port/Port>;
+rdfs:label "windmodel_windport" .
