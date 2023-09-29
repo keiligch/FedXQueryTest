@@ -24,6 +24,11 @@
             <artifactId>rdf4j-tools-federation</artifactId>
             <version>4.3.6</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.rdf4j</groupId>
+            <artifactId>rdf4j-sail-lmdb</artifactId>
+            <version>4.3.6</version>
+        </dependency>
     </dependencies>
 
     <properties>

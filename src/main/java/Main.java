@@ -14,7 +14,9 @@ import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
 import org.eclipse.rdf4j.rio.helpers.StatementCollector;
+import org.eclipse.rdf4j.sail.lmdb.LmdbStore;
 import org.eclipse.rdf4j.sail.memory.MemoryStore;
+import org.eclipse.rdf4j.sail.nativerdf.NativeStore;
 
 import java.io.IOException;
 import java.util.List;
@@ -94,10 +96,10 @@ public class Main {
                             "?conn ssp:connectsFrom | ssp:connectsTo ?variable." +
                             "}");
 
+            queryConnVariables.setMaxExecutionTime(0);
             //The next line is the one which hangs up, Timeout
             List<BindingSet> variableList = ((FedXTupleQuery)queryConnVariables).evaluate().stream().collect(Collectors.toList());
             assert variableList.size() == 0;
-
         });
 
     }
